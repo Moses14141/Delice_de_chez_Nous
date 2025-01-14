@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Delice de chez nous - Menu</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/menu.css">
+
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <img src="/images/IMG_logo.jpg" alt="Delice de chez nous">
+    </div>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">Qui sommes-nous</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Hamburger Menu for Mobile -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Menu Section -->
+    <section id="menu">
+      <h2>Notre Menu</h2>
+  
+      <div class="menu-container">
+        <!-- Food Items Section -->
+        <div class="food-section">
+          <h3>Plats</h3>
+          <div class="menu-items">
+            <!-- Menu Item 1 -->
+            <div class="menu-item">
+              <img src="/images/braise.jpg" alt="Plat 1">
+              <h4>Poisson Braisé</h4>
+              <div class="pricing">
+                <p>Prix: $18.00</p>
+              </div>
+            </div>
+  
+            <!-- Menu Item 2 -->
+            <div class="menu-item">
+              <img src="/images/poulet.jpg" alt="Plat 2">
+              <h4>Poulet Mayo</h4>
+              <div class="pricing">
+                <p>Cinq pour: $15.00</p>
+                <p>Dix pour: $25.00</p>
+              </div>
+            </div>
+  
+            <!-- Menu Item 3 (Combo Meal Example) -->
+            <div class="menu-item">
+              <img src="/images/chevre.jpg" alt="Plat 3">
+              <h4>Viande de chèvre</h4>
+              <div class="pricing">
+                <p>Prix: $25.00</p>
+              </div>
+            </div>
+  
+            
+          </div>
+        </div>
+  
+        <!-- Combo List Section -->
+        <div class="combo-section">
+          <h3>Combos</h3>
+          <div class="menu-items">
+            <!-- Combo 1 -->
+            <div class="menu-item">
+              <img src="/images/combo1.png" alt="Combo 1">
+              <h4>Poisson grillé ou braisé + Fufu</h4>
+              <h6><em>Viens avec des légumes au choix : <br> Épinard ou Pondou</em></h6>
+              <div class="pricing">
+                <p>Prix : $35.00</p>
+              </div>
+            </div>
+  
+            <!-- Combo 2 -->
+            <div class="menu-item">
+              <img src="/images/Combo2.png" alt="Combo 2">
+              <h4> Viande de chèvre + Fufu </h4>
+              <h6><em>Viens avec des légumes au choix : <br> Épinard ou Pondou</em></h6>
+
+              <div class="pricing">
+                <p>Prix: $35.00</p>
+              </div>
+            </div>
+
+
+            <!-- Combo 3 -->
+            <div class="menu-item">
+                <img src="/images/Combo2.png" alt="Combo 2">
+                <h4>Fufu + Maquereau grillé </h4>
+                <h6><em>Viens avec des légumes au choix : <br> Épinard ou Pondou</em></h6>
+
+                <div class="pricing">
+                  <p>Prix: $39.00</p>
+                </div>
+              </div>
+
+              <!-- Combo 4 -->
+            <div class="menu-item">
+                <img src="/images/white_rice.png" alt="Combo 2">
+                <h4> Beauf + Riz et un jus </h4>
+                <h6><em>Viens avec des légumes au choix : <br> Épinard ou Pondou</em></h6>
+
+                <div class="pricing">
+                  <p>Prix: $35.00</p>
+                </div>
+              </div>
+
+
+            <!-- Combo 5 -->
+            <div class="menu-item">
+                <img src="/images/poulet_rice.png" alt="Combo 2">
+                <h4> Poulet Mayo + Riz au legumes + Une Canette </h4>
+                <h6><em>Viens avec des légumes au choix : <br> Épinard ou Pondou</em></h6>
+
+                <div class="pricing">
+                  <p>Prix: $35.00</p>
+                </div>
+              </div>
+  
+            <!-- Combo 6 -->
+            <div class="menu-item">
+              <img src="/images/plantaint.png" alt="Combo 3">
+              <h4>Poulet Mayo + Banane Plantain + une Canettes</h4>
+              <h6><em>Viens avec des légumes au choix : <br> Épinard ou Pondou</em></h6>
+
+              <div class="pricing">
+                <p>Prix: $35</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+
+  
+        <!-- Snacks List Section -->
+        <div class="snack-section">
+          <h3>Snack</h3>
+          <div class="menu-items">
+            <!-- Snack 1 -->
+            <div class="menu-item">
+              <img src="/images/Samosa.JPG" alt="Snack 1">
+              <h4> Samossas à la viandes de boeuf </h4>
+              <div class="pricing">
+                <p>Plateau de 25 - Prix : $40.00</p>
+                <p>Plateau de 30 - Prix : $55.00</p>
+                <p>Plateau de 40 - Prix : $70.00</p>
+              </div>
+            </div>
+
+
+
+  
+            <!-- Snack 2 -->
+            <div class="menu-item">
+              <img src="/images/Samosa.JPG" alt="Snack 2">
+              <h4> Samossas aux riz et légumes </h4>
+              <div class="pricing">
+                <p>Plateau de 25 - Prix : $35.00</p>
+                <p>Plateau de 30 - Prix : $45.00</p>
+                <p>Plateau de 40 - Prix : $65.00</p>
+              </div>
+            </div>
+
+            <!-- Snack 3 -->
+            <div class="menu-item">
+                <img src="/images/chapat.JPG" alt="Snack 2">
+                <h4>Chapatis</h4>
+                <div class="pricing">
+                    <p>Dix Rolets - Prix : 30,00 $</p>
+                    <p>Quinze Rolets - Prix : 45,00 $</p>
+                    <p>Vingt-cinq Rolets - Prix : 60,00 $</p>
+                    
+                    
+                </div>
+              </div>
+
+             <!-- Snack 4 -->
+             <div class="menu-item">
+                <img src="/images/Mandazi.JPG" alt="Snack 2">
+                <h4>Mandazi</h4>
+                <div class="pricing">
+                    <p>Petit plateau - Prix: $35.00</p>
+                    <p>Moyen Plateau - Prix: $45.00</p>
+                    <p>Grand Plateau - Prix: $65.00</p>
+                </div>
+              </div>
+
+             <!-- Snack 5 -->
+             <div class="menu-item">
+                <img src="/images/Beignet.JPG" alt="Snack 2">
+                <h4>Beignets</h4>
+                <div class="pricing">
+                  <p>Petit plateau - Prix: $35.00</p>
+                  <p>Moyen Plateau - Prix: $45.00</p>
+                  <p>Grand Plateau - Prix: $65.00</p>
+                </div>
+              </div>
+  
+            <!-- Snack 6 -->
+            <div class="menu-item">
+              <img src="/images/Galette.jpg" alt="Snack 3">
+              <h4>Galettes</h4>
+              <div class="pricing">
+                <p>10 morceaux - Prix : $35,00</p>
+                <p>15 morceaux - Prix : $45,00</p>
+                <p>20 morceaux - Prix : $65,00</p>
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Drinks Section -->
+        <div class="drinks-section">
+          <h3>Boissons</h3>
+          <div class="menu-items">
+            <div class="menu-item">
+              <img src="/images/jus.jpeg" alt="Boisson 1">
+              <h4>Jus</h4>
+              <p>$5.00</p>
+            </div>
+            <div class="menu-item">
+              <img src="/images/cannette-personnel.jpg" alt="Boisson 2">
+              <h4>Canettes de boissons gazeuses</h4>
+              <p>$4.00</p>
+            </div>
+            <div class="menu-item">
+              <img src="/images/water.png" alt="Boisson 3">
+              <h4>Eau Minérale</h4>
+              <p>$2.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  
+
+ <!-- Footer Section -->
+<footer>
+    <div class="social-media">
+      <a href="https://www.facebook.com/share/1Dy38SWTKN/?mibextid=wwXIfr" class="social-icon" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/maranondo?igsh=c2drbTdzMzZ3bmts" class="social-icon" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com/@lacongolaize0?_t=ZM-8t2tkxEjJF0&_r=1" class="social-icon" target="_blank" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>  <!-- Add TikTok icon -->
+      </a>
+    </div>
+    <div class="contact-info">
+        <p>Phone: +1 (581) 309 7924 </p>
+        <p>Email: delicedecheznous@gmail.com</p>
+      </div>
+      <p>&copy; 2025 Delice de chez nous. Tous droits réservés.</p>
+      
+  </footer>
+
+  
+
+  <script src="js/script.js"></script>
+</body>
+</html>

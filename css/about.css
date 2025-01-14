@@ -1,0 +1,190 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(222, 163, 25);
+    color: #333;
+  }
+
+/* Hero Section */
+.about-hero {
+    position: relative;
+    background-image: url('../images/spoon.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.about-hero-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.about-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+/* Story Section */
+.about-story {
+    padding: 4rem 2rem;
+    background-color:  rgb(222, 163, 25);
+    text-align: center;
+}
+
+.story-title {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.story-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+/* Vision Section */
+.about-vision {
+    padding: 4rem 2rem;
+    background-color: black;
+
+    text-align: center;
+}
+
+.vision-title {
+    font-size: 2.5rem;
+    color:   rgb(222, 163, 25);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.vision-description {
+    font-size: 1.2rem;
+    color: #cabfad;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+/* Team Section */
+.about-team {
+    padding: 4rem 2rem;
+    background-color: #3b3005;
+    text-align: center;
+}
+
+.team-title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    width: 30%;
+    background-color:   rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgb(222, 163, 25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+.team-member {
+    text-align: center;  /* Centers the content of each team member */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.team-member img {
+    width: 80%;  /* Adjust width as needed to ensure image isn't too large */
+    max-width: 250px; /* Optional: Set a max-width to maintain image size */
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+
+.team-member:hover img {
+    transform: scale(1.05);
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: wheat;
+}
+
+.team-member p {
+    font-size: 1.1rem;
+    color: wheat;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-members {
+        flex-direction: column;
+    }
+
+    .team-member {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+

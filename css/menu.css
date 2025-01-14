@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(222, 163, 25);
+    color: #333;
+  }
+  
+  /* Menu Section */
+  #menu {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  #menu h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #222;
+  }
+  
+  /* Menu Container for Flex Layout */
+  .menu-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  /* Food and Drinks Sections */
+  .food-section, .drinks-section {
+    width: 48%;
+    animation: slideIn 0.8s ease-out;
+  }
+  
+  .food-section h3, .drinks-section h3 {
+    font-size: 1.17em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #222;
+  }
+  
+  /* Menu Items Layout */
+  .menu-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .menu-item {
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Circular Images */
+  .menu-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
+  
+  /* Text Styling */
+  .menu-item h4 {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .menu-item .pricing p {
+    font-size: 16px;
+    color: #e67e22;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  /* Smooth Scroll Animation */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Styles for Smaller Screens */
+  @media (max-width: 768px) {
+    .menu-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .food-section, .drinks-section {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  
+    .menu-items {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .menu-items {
+      grid-template-columns: 1fr;
+    }
+  
+    .menu-item h4 {
+      font-size: 16px;
+    }
+  
+    .menu-item .pricing p {
+      font-size: 14px;
+    }
+  }
+  
