@@ -1,0 +1,103 @@
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(222, 163, 25);
+  }
+
+
+/* Gallery Container */
+.gallery-container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Gallery Title */
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Gallery Wrapper */
+.gallery-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 10px 0;
+  display: flex;
+}
+
+/* Gallery Scroll */
+.gallery {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* Gallery Item */
+.gallery-item {
+  position: relative;
+  flex-shrink: 0;
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: rgb(222, 163, 25);
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.gallery-item p {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.1rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  width: 80%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Hover effects */
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item:hover p {
+  opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .gallery-item {
+    width: 200px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-item {
+    width: 150px;
+    height: 250px;
+  }
+}

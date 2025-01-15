@@ -1,119 +1,126 @@
-/* Contact Page Styles */
+/* ---------------------------------------- Contact Page Styles ---------------------------------------- */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: rgb(222, 163, 25);
     color: #333;
-  }
-  
-  header {
+}
+
+/* ---------------------------------------- Header Styles ---------------------------------------- */
+header {
     background-color: black;
     color: white;
     padding: 20px;
-  }
-  
-  header .logo img {
+}
+
+header .logo img {
     width: 150px;
     height: auto;
-  }
-  
-  header .nav-links ul {
+}
+
+header .nav-links ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
     padding: 0;
-  }
-  
-  header .nav-links a {
+}
+
+header .nav-links a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-  }
-  
-  .contact-main {
+}
+
+/* ---------------------------------------- Contact Section Styles ---------------------------------------- */
+.contact-main {
     padding: 50px 20px;
     background-color: rgb(222, 163, 25);
-  }
-  
-  .contact-hero {
+}
+
+.contact-hero {
     text-align: center;
     margin-bottom: 40px;
-  }
-  
-  .contact-hero h1 {
+}
+
+.contact-hero h1 {
     font-size: 36px;
     color: #222;
-  }
-  
-  .contact-hero p {
+}
+
+.contact-hero p {
     font-size: 18px;
     color: #555;
-  }
-  
-  .contact-info {
+}
+
+/* ---------------------------------------- Contact Info Styles ---------------------------------------- */
+.contact-info {
     background-color: #fff;
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .contact-info h2 {
+}
+
+.contact-info h2 {
     font-size: 32px;
     text-align: center;
     margin-bottom: 30px;
-  }
-  
-  .contact-details {
+}
+
+.contact-details {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-  
-  .contact-item {
+}
+
+.contact-item {
     width: 30%;
     padding: 15px;
     background-color: #f9f9f9;
     border-radius: 8px;
     margin-bottom: 20px;
-  }
-  
-  .contact-item h3 {
+}
+
+.contact-item h3 {
     font-size: 22px;
     margin-bottom: 10px;
-  }
-  
-  .contact-item p {
+}
+
+.contact-item p {
     font-size: 16px;
-  }
-  
-  .contact-form {
+}
+
+/* ---------------------------------------- Contact Form Styles ---------------------------------------- */
+.contact-form {
     background-color: #fff;
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-top: 40px;
-  }
-  
-  .contact-form h2 {
+}
+
+.contact-form h2 {
     font-size: 32px;
     text-align: center;
     margin-bottom: 30px;
-  }
-  
-  .contact-form form {
+}
+
+.contact-form form {
     display: grid;
     gap: 20px;
-  }
-  
-  .contact-form input, .contact-form textarea {
+    justify-content: center;
+    justify-items: center;
+   
+}
+
+.contact-form input, .contact-form textarea {
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
     font-size: 16px;
-  }
-  
-  .contact-form button.submit-btn {
+}
+
+.contact-form button.submit-btn {
     background-color: #e67e22;
     color: white;
     padding: 15px;
@@ -122,35 +129,143 @@ body {
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
-  
-  .contact-form button.submit-btn:hover {
+}
+
+.contact-form button.submit-btn:hover {
     background-color: #d35400;
-  }
-  
-  footer {
+}
+
+/* ---------------------------------------- Footer Styles ---------------------------------------- */
+footer {
     background-color: black;
     color: white;
     padding: 20px;
     text-align: center;
-  }
-  
-  footer .social-media {
+}
+
+footer .social-media {
     margin-bottom: 10px;
-  }
-  
-  footer .social-media a {
+}
+
+footer .social-media a {
     color: white;
     font-size: 24px;
     margin: 0 10px;
-  }
-  
-  footer .contact-info {
+}
+
+footer .contact-info {
     font-size: 16px;
-  }
-  
-  footer .contact-info a {
-    color: #e67e22;
+    
+}
+
+footer .contact-info a {
+    color: #3b3005;
     text-decoration: none;
-  }
-  
+}
+
+/* ---------------------------------------- Mobile Responsiveness ---------------------------------------- */
+@media (max-width: 768px) {
+    /* Header: stack the navigation links */
+    header .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    header .nav-links a {
+        font-size: 16px;
+        margin: 10px 0;
+        
+    }
+
+    /* Contact details: stack the items vertically */
+    .contact-details {
+        flex-direction: column;
+        align-items: center;
+      
+    }
+
+    .contact-item {
+        width: 80%;
+        margin-bottom: 20px;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    /* Contact form: make inputs full-width */
+    .contact-form {
+        padding: 30px;
+        
+       
+    }
+
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+        padding: 12px;
+        
+    }
+
+    /* Hero section: adjust text sizes */
+    .contact-hero h1 {
+        font-size: 28px;
+    }
+
+    .contact-hero p {
+        font-size: 16px;
+    }
+
+    /* Footer: center social media icons */
+    footer .social-media a {
+        font-size: 20px;
+        margin: 0 8px;
+    }
+
+    footer .contact-info {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Reduce font sizes and spacing on very small screens */
+    .contact-hero h1 {
+        font-size: 24px;
+    }
+
+    .contact-hero p {
+        font-size: 14px;
+    }
+
+    .contact-info h2 {
+        font-size: 28px;
+    }
+
+    .contact-item h3 {
+        font-size: 18px;
+    }
+
+    .contact-item p {
+        font-size: 14px;
+    }
+
+    .contact-form h2 {
+        font-size: 28px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .contact-form button.submit-btn {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    footer .social-media a {
+        font-size: 18px;
+    }
+
+    footer .contact-info {
+        font-size: 12px;
+    }
+}

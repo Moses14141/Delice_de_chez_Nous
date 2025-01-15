@@ -24,6 +24,7 @@
         <li><a href="menu.html">Menu</a></li>
         <li><a href="about.html">Qui sommes-nous</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
       </ul>
     </nav>
     <!-- Hamburger Menu for Mobile -->
@@ -65,11 +66,14 @@
         </div>
         <div class="specialty-item">
           <img src="images/poulet.jpg" alt="Briouat">
-          <p>Le **Pilon de poulet** - Un plat traditionnel africain savoureux, où le poulet est mariné dans des épices locales et rôti à la perfection, offrant une combinaison de saveurs riches et délicates.</p>
+          <p>Le **Pilon de poulet** - Un plat traditionnel africain savoureux, où le poulet est mariné dans des
+             épices locales et rôti à la perfection, offrant une combinaison de saveurs riches et délicates.</p>
         </div>
         <div class="specialty-item">
           <img src="images/Viande.jpg" alt="Poulet Moambe">
-          <p>Le **Bœuf** - Un plat traditionnel africain, préparé avec des épices locales et une cuisson lente qui révèle toute la richesse des saveurs. Le bœuf est tendre et savoureux, un véritable délice pour les amateurs de viande.</p>
+          <p>Le **Bœuf** - Un plat traditionnel africain, préparé avec des épices locales et une cuisson
+             lente qui révèle toute la richesse des saveurs. Le bœuf est tendre et savoureux, un véritable 
+             délice pour les amateurs de viande.</p>
         </div>
       </div>
     </div>
@@ -78,7 +82,71 @@
 
 
 
-  <!-- Footer Section -->
+
+
+
+
+
+
+
+<!-- ------------------------------------- Review Form Section -----------------------------------------------------  -->
+<section class="review-section">
+  <div class="review-container">
+      <h2>Partagez Votre Avis</h2>
+      <p>Votre opinion compte pour nous ! Veuillez laisser un avis pour nous aider à nous améliorer.</p>
+      
+      <form id="review-form">
+          <div class="form-group">
+              <label for="name">Votre Nom</label>
+              <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+          </div>
+
+          <div class="form-group">
+              <label for="rating">Notes</label>
+              <div class="star-rating">
+                  <input type="radio" id="star5" name="rating" value="5">
+                  <label for="star5" class="star">&#9733;</label>
+                  <input type="radio" id="star4" name="rating" value="4">
+                  <label for="star4" class="star">&#9733;</label>
+                  <input type="radio" id="star3" name="rating" value="3">
+                  <label for="star3" class="star">&#9733;</label>
+                  <input type="radio" id="star2" name="rating" value="2">
+                  <label for="star2" class="star">&#9733;</label>
+                  <input type="radio" id="star1" name="rating" value="1">
+                  <label for="star1" class="star">&#9733;</label>
+              </div>
+          </div>
+
+          <div class="form-group">
+              <label for="review">Votre Avis</label>
+              <textarea id="review" name="review" rows="5" placeholder="Rédigez votre avis ici" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Soumettre Votre Avis</button>
+      </form>
+  </div>
+</section>
+
+
+<!-- ----------------------------------------------------- Section d'affichage des avis -------------------------------------------------------------------------------- -->
+<section class="reviews-display">
+  <div class="reviews-container">
+      <h2>Ce que disent nos clients</h2>
+      <div id="reviews-list">
+          <!-- Les avis seront insérés ici dynamiquement -->
+      </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+  <!-- ----------------------------------------- Footer Section ---------------------------------------------------------- -->
 <footer>
     <div class="social-media">
       <a href="https://www.facebook.com/share/1Dy38SWTKN/?mibextid=wwXIfr" class="social-icon" target="_blank" aria-label="Facebook">
@@ -97,10 +165,20 @@
       </div>
       <p>&copy; 2025 Delice de chez nous. Tous droits réservés.</p>
 
+       <!-- Scroll to Top Button -->
+       <a href="#top" title="Scroll to Top" id="scrollToTopBtn">
+        <button>Retour en haut</button>
+      </a>
+      
+
+
+ 
       
   </footer>
 
 
   <script src="js/script.js"></script>
+  
+
 </body>
 </html>

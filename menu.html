@@ -24,6 +24,7 @@
         <li><a href="menu.html">Menu</a></li>
         <li><a href="about.html">Qui sommes-nous</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
       </ul>
     </nav>
     <!-- Hamburger Menu for Mobile -->
@@ -46,7 +47,7 @@
           <div class="menu-items">
             <!-- Menu Item 1 -->
             <div class="menu-item">
-              <img src="/images/braise.jpg" alt="Plat 1">
+              <img src="/images/brise.jpg" alt="Plat 1">
               <h4>Poisson Braisé</h4>
               <div class="pricing">
                 <p>Prix: $18.00</p>
@@ -277,11 +278,51 @@
         <p>Email: delicedecheznous@gmail.com</p>
       </div>
       <p>&copy; 2025 Delice de chez nous. Tous droits réservés.</p>
-      
+
+      <a href="#top" title="Scroll to Top" id="scrollToTopBtn">
+        <button>Retour en haut</button>
+      </a>
   </footer>
 
   
 
   <script src="js/script.js"></script>
+  <script>
+    // Select the button element
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// Function to show the button when scrolling
+function handleScroll() {
+  if (window.scrollY > 300) { // Show button after scrolling 300px
+    scrollToTopBtn.style.display = "block";  // Show the button
+  } else {
+    scrollToTopBtn.style.display = "none";  // Hide the button
+  }
+}
+
+// Function to hide the button when not scrolling
+let scrollTimeout;
+function resetScroll() {
+  // Hide the button after 2 seconds of inactivity
+  clearTimeout(scrollTimeout);
+  scrollTimeout = setTimeout(() => {
+    scrollToTopBtn.style.display = "none"; // Hide the button
+  }, 2000); // 2 seconds delay after scrolling stops
+}
+
+// Add scroll event listener to show/hide button
+window.addEventListener("scroll", () => {
+  handleScroll();
+  resetScroll();
+});
+
+// Scroll to top functionality
+scrollToTopBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+  </script>
+
+ 
 </body>
 </html>
